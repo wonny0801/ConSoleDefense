@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{e4d13cb5-4d11-4d8e-8239-81970bcfcec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{170dd5f7-ff00-4d0c-8445-ae65eeaa6d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\GameState">
+      <UniqueIdentifier>{736448b0-1e5c-49c9-ae21-b0618739eee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\MenuState">
+      <UniqueIdentifier>{9c22e359-b588-44db-99e9-20aad1ae67d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameMng">
+      <UniqueIdentifier>{78817410-3cc0-438a-b3c0-e251905e9dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameBoard">
+      <UniqueIdentifier>{79645b4f-57c7-4521-9402-849531274fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit">
+      <UniqueIdentifier>{394332b7-518d-451e-9e5a-a11a5ad4ef5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit">
+      <UniqueIdentifier>{ed7acef7-6e3a-40a8-894e-4b4465ab0ae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_0">
+      <UniqueIdentifier>{8a8685b7-78ff-47f4-ab21-8f69c0060edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{b75ab8c5-a0e3-4024-a1ee-3b7806b22ca9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="StateCtrl.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>State\MenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMng.h">
+      <Filter>GameMng</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBoard.h">
+      <Filter>GameBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_0.h">
+      <Filter>MyUnit\Unit_0</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsoleFramework.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="StateCtrl.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>State\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>State\MenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMng.cpp">
+      <Filter>GameMng</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBoard.cpp">
+      <Filter>GameBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_0.cpp">
+      <Filter>MyUnit\Unit_0</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

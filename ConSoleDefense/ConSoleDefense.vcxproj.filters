@@ -43,6 +43,12 @@
     <Filter Include="Player">
       <UniqueIdentifier>{b75ab8c5-a0e3-4024-a1ee-3b7806b22ca9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyUnit\Unit_1">
+      <UniqueIdentifier>{f468ac9f-e722-493b-a89b-137d7786c2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{d4412d61-84e5-4c3d-9932-4b334977d23e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -81,6 +87,12 @@
     <ClInclude Include="Player.h">
       <Filter>Player</Filter>
     </ClInclude>
+    <ClInclude Include="Unit_1.h">
+      <Filter>MyUnit\Unit_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -112,6 +124,15 @@
     </ClCompile>
     <ClCompile Include="Unit_0.cpp">
       <Filter>MyUnit\Unit_0</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_1.cpp">
+      <Filter>MyUnit\Unit_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

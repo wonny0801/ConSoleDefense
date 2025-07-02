@@ -4,6 +4,7 @@
 #include <time.h>
 #include "define.h"
 #include <string>
+#include <vector>
 //-------------------------------------
 //기본적인 틀을 만드는 파일들... 맨 위에...
 #include "Singleton.h"
@@ -14,10 +15,10 @@
 #include "StateCtrl.h"
 //-----------------------------------------
 
+#include "Unit_1.h"
+#include "Unit_0.h"
 
-#include"Unit_0.h"
-
-
+#include "Enemy.h"
 //----------------------------------------------
 #include "Player.h"
 #include "GameBoard.h"

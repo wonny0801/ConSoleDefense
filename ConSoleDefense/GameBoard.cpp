@@ -20,6 +20,8 @@ void GameBoard::Update()
 
 void GameBoard::Draw()
 {
+	DrawStr(2, 2, ("money : " + std::to_string(GameMng::Getles()->player.money)).c_str(),
+		WHITE, BLACK);
 	for (int i = 0; i < 120; i++)
 	{
 		DrawChar(i, 24, body, fColor, bColor);
@@ -33,10 +35,10 @@ void GameBoard::Draw()
 			}
 		}
 	}
-	DrawChar(5, 26, '0', WHITE, BLACK);
-	DrawStr(3, 27, ("LV : " + std::to_string(GameMng::Getles()->player.lv_0)).c_str(),
+	DrawChar(5, 26, '1', WHITE, BLACK);
+	DrawStr(3, 27, ("LV : " + std::to_string(GameMng::Getles()->player.lv_1)).c_str(),
 		WHITE, BLACK);
-	DrawStr(4, 29, "50\\", WHITE, BLACK);
+	DrawStr(4, 29, "50$", WHITE, BLACK);
 
 
 }

@@ -1,29 +1,27 @@
 #include "include.h"
 
-U0::U0()
+U1::U1()
 {
-	y = 22;
 	fColor = WHITE;
-	body = '0';
+	body = '1';
 
 	hp = 10.0f;
 	damage = 3.0f;
 	speed = 1.0f;
-	isAlive = true;
+	isAlive = false;
 }
 
-U0::~U0()
+U1::~U1()
 {
 }
 
-void U0::Update()
+void U1::Update()
 {
 	Move();
 }
 
-void U0::Move()
+void U1::Move()
 {
-	
 	if (movetime < GetTickCount())
 	{
 		movetime = GetTickCount() + (2000 / speed);

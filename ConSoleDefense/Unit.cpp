@@ -3,7 +3,7 @@
 Unit::Unit()
 {
 	x = 0;
-	y = 0;
+	y = 22;
 	body = ' ';
 	fColor = WHITE;
 	bColor = BLACK;

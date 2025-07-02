@@ -1,4 +1,5 @@
 #pragma once
+#include "Player.h"
 class GameMng : public Singleton<GameMng>
 {
 public:

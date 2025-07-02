@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="define.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameMng.h" />
     <ClInclude Include="GameState.h" />
@@ -139,18 +140,22 @@
     <ClInclude Include="StateCtrl.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Unit_0.h" />
+    <ClInclude Include="Unit_1.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameMng.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateCtrl.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="Unit_0.cpp" />
+    <ClCompile Include="Unit_1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

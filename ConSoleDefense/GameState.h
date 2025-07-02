@@ -5,12 +5,17 @@ public:
 	GameState();
 	~GameState();
 
+	DWORD enemyCoolTime;
+
 	GameBoard gameboard;
 
-	U0 U0_1;
+	std::vector<Unit*> playerUnit;
+	std::vector<Enemy*> enemys;
 
 	void Start()  override;
 	void Update() override;
 	void Draw()	  override;
 	void Exit()	  override;
+
+	void CreateEnemy();
 };

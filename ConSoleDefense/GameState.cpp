@@ -15,6 +15,7 @@ void GameState::Start()
 
 void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게임기능들)
 {
+	
 	CreateEnemy();
 	if (GetAsyncKeyState(VK_ESCAPE))
 	{
@@ -30,6 +31,8 @@ void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게�
 	{
 		enemys[i]->Update();
 	}
+
+	UnitClipping();
 }
 
 void GameState::Draw()
@@ -56,9 +59,53 @@ void GameState::CreateEnemy()
 {
 	if (enemyCoolTime < GetTickCount())
 	{
-		enemyCoolTime += rand() % 3000 + 1500;
+		enemyCoolTime += rand() % 3000 + 30000;
 		Enemy* enemy = new Enemy();
 		enemy->Enable(enemy->x,enemy->y);
 		enemys.push_back(enemy);
 	}
+}
+
+void GameState::UnitClipping()
+{
+    for (int i = 0; i < playerUnit.size(); i++)
+    {
+        if (playerUnit[i]->isAlive)
+        {
+            bool inRange = false;
+            for (int j = 0; j < enemys.size(); j++)
+            {
+                if (enemys[j]->isAlive)
+                {
+                    // 사거리 내에 적이 있는지 체크
+                    if (abs(playerUnit[i]->x - enemys[j]->x) <= playerUnit[i]->range)
+                    {
+                        inRange = true;
+                        break;
+                    }
+                }
+            }
+            playerUnit[i]->canMove = !inRange;
+        }
+    }
+
+    for (int j = 0; j < enemys.size(); j++)
+    {
+        if (enemys[j]->isAlive)
+        {
+            bool inRange = false;
+            for (int i = 0; i < playerUnit.size(); i++)
+            {
+                if (playerUnit[i]->isAlive)
+                {
+                    if (abs(enemys[j]->x - playerUnit[i]->x) <= enemys[j]->range)
+                    {
+                        inRange = true;
+                        break;
+                    }
+                }
+            }
+            enemys[j]->canMove = !inRange;
+        }
+    }
 }

@@ -11,13 +11,17 @@ public:
 	WORD fColor;
 	WORD bColor;
 	bool isAlive;
+	bool canMove;
 
 	float hp;
 	float damage;
 	float speed;
+	int range;
+	int attackSpeed;
 	int level;
 
 	DWORD movetime;
+	DWORD attackTime;
 
 	virtual void Init();
 	virtual void Update();
@@ -26,6 +30,7 @@ public:
 
 	virtual void Upgrade();
 
+	void Attack();
 	void Clipping();
 	void Enable(int x, int y);
 	void Disable();

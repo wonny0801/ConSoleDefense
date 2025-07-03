@@ -9,7 +9,7 @@ int main()
 		Update();
 		Draw();
 
-		EngineSync(30);
+		EngineSync(15);
 	}
 
 	

@@ -8,6 +8,8 @@ U1::U1()
 	hp = 10.0f;
 	damage = 3.0f;
 	speed = 1.0f;
+	range = 1;
+	attackSpeed = 1;
 	isAlive = false;
 }
 
@@ -17,14 +19,17 @@ U1::~U1()
 
 void U1::Update()
 {
-	Move();
+	if(canMove)
+		Move();
+	Attack();
+	Clipping();
 }
 
 void U1::Move()
 {
 	if (movetime < GetTickCount())
 	{
-		movetime = GetTickCount() + (2000 / speed);
+		movetime = GetTickCount() + (1000 / speed);
 		x++;
 	}
 }

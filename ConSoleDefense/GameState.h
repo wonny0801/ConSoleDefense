@@ -18,4 +18,6 @@ public:
 	void Exit()	  override;
 
 	void CreateEnemy();
+
+	void UnitClipping();
 };

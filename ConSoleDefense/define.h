@@ -22,5 +22,6 @@ enum
 {
 	E_MENU,
 	E_GAME,
+	E_SHOP,
 	E_STATE_MAX
 };

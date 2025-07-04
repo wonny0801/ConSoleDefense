@@ -135,6 +135,7 @@
     <ClInclude Include="include.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="ShopState.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateCtrl.h" />
@@ -151,6 +152,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ShopState.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateCtrl.cpp" />
     <ClCompile Include="Unit.cpp" />

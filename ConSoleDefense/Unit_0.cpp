@@ -16,10 +16,10 @@ U0::~U0()
 {
 }
 
-void U0::Update()
-{
-	Move();
-}
+//void U0::Update()
+//{
+//	Move();
+//}
 
 void U0::Move()
 {

@@ -10,7 +10,7 @@ public:
 	GameBoard gameboard;
 
 	std::vector<Unit*> playerUnit;
-	std::vector<Enemy*> enemys;
+	std::vector<Unit*> enemys;
 
 	void Start()  override;
 	void Update() override;

@@ -18,6 +18,9 @@ public:
 	int money;
 	int upgradePoint;
 
+	
+	int moneySpeed;
+	DWORD moneyTime;
 	DWORD u1Cooltime;
 
 	Player();
@@ -27,6 +30,7 @@ public:
 
 	
 	void Update();
+	void moneyUp();
 
 	void buyUnit();
 	

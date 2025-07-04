@@ -7,9 +7,9 @@ Enemy::Enemy()
 	fColor = RED;
 	
 
-	hp = 10.0f;
-	damage = 0.5f;
-	speed = 10.0f;
+	hp = 50.0f;
+	damage = 1.0f;
+	speed = 5.0f;
 	range = 1;
 	attackSpeed = 1;
 	isAlive = false;
@@ -20,13 +20,13 @@ Enemy::~Enemy()
 {
 }
 
-void Enemy::Update()
-{
-	if(canMove)
-		Move();
-	Attack();
-	Clipping();
-}
+//void Enemy::Update()
+//{
+//	if(canMove)
+//		Move();
+//	Attack();
+//	Clipping();
+//}
 
 void Enemy::Move()
 {

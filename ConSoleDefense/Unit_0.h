@@ -6,7 +6,7 @@ public:
 	U0();
 	~U0();
 
-	void Update() override;
+	//void Update() override;
 	void Move() override;
 	
 	

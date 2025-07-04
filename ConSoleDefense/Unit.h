@@ -22,16 +22,20 @@ public:
 
 	DWORD movetime;
 	DWORD attackTime;
+	DWORD deathTime;
 
 	virtual void Init();
-	virtual void Update();
+	void Update(std::vector<Unit*> target);
 	virtual void Draw();
 	virtual void Move();
 
 	virtual void Upgrade();
 
-	void Attack();
+	void Attack(Unit* target);
+	
 	void Clipping();
 	void Enable(int x, int y);
 	void Disable();
+
+	void death();
 };

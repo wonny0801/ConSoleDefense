@@ -7,7 +7,7 @@ public:
 
 	
 
-	void Update() override;
+	//void Update() override;
 	//void Draw();
 	void Move() override;
 

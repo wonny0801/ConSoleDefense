@@ -12,9 +12,12 @@ Player::Player()
 	lv_8 = 0;
 	lv_9 = 0;
 	lv_0 = 0;
-	money = 1000;
-	upgradePoint = 0;
+	money = 0;
+	upgradePoint = 10000;
 	u1Cooltime = GetTickCount();
+	moneySpeed = 1;
+	moneyTime = GetTickCount();
+
 }
 
 Player::~Player()
@@ -61,16 +64,26 @@ void Player::Upgrade(int unitNumber)
 void Player::Update()
 {
 	buyUnit();
+	moneyUp();
+}
+
+void Player::moneyUp()
+{
+	if (moneyTime < GetTickCount())
+	{
+		moneyTime = GetTickCount() + (1500 / moneySpeed);
+		money++;
+	}
 }
 
 void Player::buyUnit()
 {
 	if (GetAsyncKeyState('1'))
 	{
-		if (money >= 50 && u1Cooltime < GetTickCount())
+		if (money >= 10 && u1Cooltime < GetTickCount())
 		{
-			u1Cooltime = GetTickCount() + 2000;
-			money -= 50;
+			u1Cooltime = GetTickCount() + 500;
+			money -= 10;
 			U1* newUnit = new U1();
 			newUnit->Enable(0, 22);
 			((GameState*)GameMng::Getles()->

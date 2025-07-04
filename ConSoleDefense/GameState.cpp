@@ -15,21 +15,25 @@ void GameState::Start()
 
 void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게임기능들)
 {
-	
-	CreateEnemy();
-	if (GetAsyncKeyState(VK_ESCAPE))
-	{
-		GameMng::Getles()->cstateCtrl.StateChange(E_MENU);
-	}
+    static bool prevEsc = false;
+    bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
+    if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
+    {
+        GameMng::Getles()->cstateCtrl.StateChange(E_MENU);
+    }
+    prevEsc = currEsc;
+
+
+    CreateEnemy();
 	//U0_1.Update();
 	GameMng::Getles()->player.Update();
 	for (int i = 0; i < playerUnit.size(); i++)
 	{
-		playerUnit[i]->Update();
+		playerUnit[i]->Update(enemys);
 	}
 	for (int i = 0; i < enemys.size(); i++)
 	{
-		enemys[i]->Update();
+		enemys[i]->Update(playerUnit);
 	}
 
 	UnitClipping();
@@ -37,6 +41,8 @@ void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게�
 
 void GameState::Draw()
 {
+    DrawStr(2, 2, ("money : " + std::to_string(GameMng::Getles()->player.money)).c_str(),
+        WHITE, BLACK);
 	DrawStr(100, 10, "GameState", WHITE, BLACK);
 	gameboard.Draw();
 

@@ -49,6 +49,9 @@
     <Filter Include="Enemy">
       <UniqueIdentifier>{d4412d61-84e5-4c3d-9932-4b334977d23e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="State\ShopState">
+      <UniqueIdentifier>{fcd90644-0999-43f0-a67d-c4b1e1fd4655}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -93,6 +96,9 @@
     <ClInclude Include="Enemy.h">
       <Filter>Enemy</Filter>
     </ClInclude>
+    <ClInclude Include="ShopState.h">
+      <Filter>State\ShopState</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -133,6 +139,9 @@
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopState.cpp">
+      <Filter>State\ShopState</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

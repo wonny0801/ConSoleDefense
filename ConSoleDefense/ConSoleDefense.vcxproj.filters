@@ -52,6 +52,9 @@
     <Filter Include="State\ShopState">
       <UniqueIdentifier>{fcd90644-0999-43f0-a67d-c4b1e1fd4655}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyUnit\MyCastle">
+      <UniqueIdentifier>{67fde8ff-d11c-4f1a-9b57-e3605ba53bc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -99,6 +102,12 @@
     <ClInclude Include="ShopState.h">
       <Filter>State\ShopState</Filter>
     </ClInclude>
+    <ClInclude Include="EnemyCastle.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCastle.h">
+      <Filter>MyUnit\MyCastle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -142,6 +151,12 @@
     </ClCompile>
     <ClCompile Include="ShopState.cpp">
       <Filter>State\ShopState</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyCastle.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCastle.cpp">
+      <Filter>MyUnit\MyCastle</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

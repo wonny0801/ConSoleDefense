@@ -3,6 +3,8 @@
 GameState::GameState()
 {
 	enemyCoolTime = GetTickCount();
+    EnemyCastle* castle = new EnemyCastle();
+    enemys.push_back(castle);
 }
 
 GameState::~GameState()

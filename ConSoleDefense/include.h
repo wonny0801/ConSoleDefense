@@ -14,11 +14,13 @@
 #include "State.h"
 #include "StateCtrl.h"
 //-----------------------------------------
+#include "Enemy.h"
 
 #include "Unit_1.h"
 #include "Unit_0.h"
 
-#include "Enemy.h"
+#include "MyCastle.h"
+#include "EnemyCastle.h"
 //----------------------------------------------
 #include "Player.h"
 #include "GameBoard.h"

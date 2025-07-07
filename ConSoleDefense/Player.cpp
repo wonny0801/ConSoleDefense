@@ -12,7 +12,7 @@ Player::Player()
 	lv_8 = 0;
 	lv_9 = 0;
 	lv_0 = 0;
-	money = 0;
+	money = 100;
 	upgradePoint = 10000;
 	u1Cooltime = GetTickCount();
 	moneySpeed = 1;
@@ -69,9 +69,10 @@ void Player::Update()
 
 void Player::moneyUp()
 {
+	if (moneySpeed <= 0) return;
 	if (moneyTime < GetTickCount())
 	{
-		moneyTime = GetTickCount() + (1500 / moneySpeed);
+		moneyTime = GetTickCount() + (1000 / moneySpeed);
 		money++;
 	}
 }

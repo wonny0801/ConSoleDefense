@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClInclude Include="define.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyCastle.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameMng.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="MenuState.h" />
+    <ClInclude Include="MyCastle.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ShopState.h" />
     <ClInclude Include="Singleton.h" />
@@ -146,11 +148,13 @@
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyCastle.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameMng.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="MyCastle.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ShopState.cpp" />
     <ClCompile Include="State.cpp" />

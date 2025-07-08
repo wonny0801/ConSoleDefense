@@ -3,8 +3,10 @@
 GameState::GameState()
 {
 	enemyCoolTime = GetTickCount();
-    EnemyCastle* castle = new EnemyCastle();
+    castle = new EnemyCastle();
     enemys.push_back(castle);
+    mycastle = new MyCastle();
+    playerUnit.push_back(mycastle);
 }
 
 GameState::~GameState()
@@ -21,10 +23,19 @@ void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게�
     bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
     if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
     {
-        GameMng::Getles()->cstateCtrl.StateChange(E_MENU);
+        GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
     }
     prevEsc = currEsc;
 
+    if (castle->hp <= 0)
+    {
+        GameMng::Getles()->cstateCtrl.StateChange(new ShopState);
+        GameMng::Getles()->gameboard.stage++;
+    }
+    if (mycastle->hp <= 0)
+    {
+        GameMng::Getles()->cstateCtrl.StateChange(new ResultState);
+    }
 
     CreateEnemy();
 	//U0_1.Update();
@@ -46,7 +57,7 @@ void GameState::Draw()
     DrawStr(2, 2, ("money : " + std::to_string(GameMng::Getles()->player.money)).c_str(),
         WHITE, BLACK);
 	DrawStr(100, 10, "GameState", WHITE, BLACK);
-	gameboard.Draw();
+	GameMng::Getles()->gameboard.Draw();
 
 	//U0_1.Draw();
 	for (int i = 0; i < playerUnit.size(); i++)

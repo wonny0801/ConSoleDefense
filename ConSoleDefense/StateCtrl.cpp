@@ -2,61 +2,59 @@
 
 cStateCtrl::cStateCtrl()
 {
-	Init();// m_pState[]를 비우기...
+	//Init();
+	m_pCurState = nullptr;
+	temp = nullptr;
 }
 
 cStateCtrl::~cStateCtrl()
 {
-	Init();
+	//Init();
 }
 
-void cStateCtrl::Init()
-{
-	for (int i = 0; i < E_STATE_MAX; i++)
-	{
-		m_pStates[i] = NULL;
-	}
-}
+//bool CStateCtrl::StateAdd(int nIndex, CState* pState)
+//{
+//	if (m_pStates[nIndex] == NULL)
+//	{
+//		m_pStates[nIndex] = pState;
+//		return true;
+//	}
+//	else
+//	{
+//		return false;
+//	}
+//}
+//
+//bool CStateCtrl::StateRelease(int nIndex)
+//{
+//	if (m_pStates[nIndex] != NULL)
+//	{
+//		//delete m_pStates[nIndex];
+//		m_pStates[nIndex] = NULL;
+//		return true;
+//	}
+//	else
+//	{
+//		return false;
+//	}
+//}
 
-bool cStateCtrl::StateAdd(int Index, cState* pState)
+bool cStateCtrl::StateChange(cState* state)
 {
-	if (m_pStates[Index] == NULL)
-	{
-		m_pStates[Index] = pState;
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-	
-}
+	cState* pState = state; 
 
-bool cStateCtrl::StateRelease(int Index)
-{
-	if (m_pStates[Index] != NULL)
-	{
-		m_pStates[Index] = NULL;
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-
-bool cStateCtrl::StateChange(int Index)
-{
-	cState* pState = m_pStates[Index];
 	if (pState != NULL)
 	{
 		if (m_pCurState != NULL)
 		{
 			m_pCurState->Exit();
+			//delete m_pCurState;
+
 		}
-		m_pPrevState = m_pCurState;
-		m_pCurState = pState;
-		m_pCurState->Start();
+		////m_pPrevState = m_pCurState;
+		//m_pCurState = pState;
+		//m_pCurState->Start();
+		temp = state;
 		return true;
 	}
 	else
@@ -70,6 +68,16 @@ void cStateCtrl::Update()
 	if (m_pCurState != NULL)
 	{
 		m_pCurState->Update();
+	}
+	if (temp != nullptr)//업데이트랑 드로우 다 끝나고 스테이트 바꿔줘야함...
+	{
+		if (m_pCurState != nullptr)
+		{
+			delete m_pCurState;
+		}
+		m_pCurState = temp;
+		m_pCurState->Start();
+		temp = nullptr;
 	}
 }
 

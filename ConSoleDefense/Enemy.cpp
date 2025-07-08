@@ -7,12 +7,13 @@ Enemy::Enemy()
 	fColor = RED;
 	
 
-	hp = 50.0f;
-	damage = 1.0f;
-	speed = 5.0f;
+	hp = 50.0f * GameMng::Getles()->gameboard.stage;
+	damage = 3.0f * GameMng::Getles()->gameboard.stage;
+	speed = 50.0f;
 	range = 1;
-	attackSpeed = 1;
+	attackSpeed = 10;
 	isAlive = false;
+	level = 1;
 	
 }
 
@@ -34,6 +35,17 @@ void Enemy::Move()
 	{
 		movetime = GetTickCount() + (2000 / speed);
 		x--;
+	}
+}
+
+void Enemy::death()
+{
+	if (hp <= 0 && isAlive)
+	{
+		Disable();
+		deathTime = GetTickCount();
+		GameMng::Getles()->player.money += 25 * level;
+		GameMng::Getles()->player.upgradePoint += 100 * level;
 	}
 }
 

@@ -25,3 +25,9 @@ enum
 	E_SHOP,
 	E_STATE_MAX
 };
+enum
+{
+	e_MENU,
+	e_GAME,
+	e_SHOP
+};

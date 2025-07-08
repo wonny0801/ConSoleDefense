@@ -2,19 +2,21 @@
 class cStateCtrl
 {
 public:
-	cState* m_pCurState; // 현재 화면...
-	cState* m_pPrevState;// 이전 화면...
+	cState* m_pCurState;
+	cState* temp;// 
+	//CState* m_pPrevState;			
 
-	cState* m_pStates[E_STATE_MAX];
+	//CState* m_pStates[E_STATE_MAX];
 
+public:
 	cStateCtrl();
 	~cStateCtrl();
 
 public:
-	void Init();
-	bool StateAdd(int Index, cState* pState); // 스테이트 추가하기...
-	bool StateRelease(int Index); // 스테이트 비우기...
-	bool StateChange(int Index); // 현재 보고있는 화면 바꾸기... 즉, 다음화면으로 이동
+	//void Init();
+	//bool StateAdd(int nIndex, CState* pState);
+	//bool StateRelease(int nIndex);
+	bool StateChange(cState* state);
 
 public:
 	void Update();

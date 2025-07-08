@@ -10,6 +10,6 @@ public:
 	//void Update() override;
 	//void Draw();
 	void Move() override;
-
+	void death() override;
 	
 };

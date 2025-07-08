@@ -137,6 +137,7 @@
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="MyCastle.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="ResultState.h" />
     <ClInclude Include="ShopState.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="State.h" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Unit_0.h" />
     <ClInclude Include="Unit_1.h" />
+    <ClInclude Include="Unit_2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp" />
@@ -156,12 +158,14 @@
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="MyCastle.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ResultState.cpp" />
     <ClCompile Include="ShopState.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateCtrl.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="Unit_0.cpp" />
     <ClCompile Include="Unit_1.cpp" />
+    <ClCompile Include="Unit_2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

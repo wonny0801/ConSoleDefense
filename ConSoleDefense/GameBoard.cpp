@@ -8,6 +8,7 @@ GameBoard::GameBoard()
 	fColor = INTENSITY_WHITE; 
 	bColor = INTENSITY_WHITE; 
 	isAlive = true;
+	stage = 1;
 }
 
 GameBoard::~GameBoard()
@@ -20,6 +21,7 @@ void GameBoard::Update()
 
 void GameBoard::Draw()
 {
+	DrawStr(56, 5, ("STAGE : " + std::to_string(stage)).c_str(), WHITE, BLACK);
 	for (int i = 0; i < 120; i++)
 	{
 		DrawChar(i, 24, body, fColor, bColor);

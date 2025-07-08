@@ -16,6 +16,7 @@
 //-----------------------------------------
 #include "Enemy.h"
 
+#include "Unit_2.h"
 #include "Unit_1.h"
 #include "Unit_0.h"
 
@@ -25,6 +26,7 @@
 #include "Player.h"
 #include "GameBoard.h"
 //모든 파일을 참조해야하는 파일들... 맨 밑에...
+#include "ResultState.h"
 #include "MenuState.h"
 #include "GameState.h" // 얘네도 가장 밑에...
 #include "ShopState.h"

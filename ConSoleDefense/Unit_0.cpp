@@ -26,7 +26,7 @@ void U0::Move()
 	
 	if (movetime < GetTickCount())
 	{
-		movetime = GetTickCount() + (2000 / speed);
+		movetime = GetTickCount() + (1000 / speed);
 		x++;
 	}
 }

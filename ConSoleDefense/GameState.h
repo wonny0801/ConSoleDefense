@@ -7,10 +7,13 @@ public:
 
 	DWORD enemyCoolTime;
 
-	GameBoard gameboard;
+	//GameBoard gameboard;
 
 	std::vector<Unit*> playerUnit;
 	std::vector<Unit*> enemys;
+
+	MyCastle* mycastle;
+	EnemyCastle* castle;
 
 	void Start()  override;
 	void Update() override;

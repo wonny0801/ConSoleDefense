@@ -19,14 +19,24 @@ void ShopState::Update()
 
 	if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
 	{
-		GameMng::Getles()->cstateCtrl.StateChange(E_MENU);
+		GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
 	}
 	prevEsc = currEsc;
+
+	static bool prevR = false;
+	bool currR = (GetAsyncKeyState('R') & 0x8000) != 0;
+
+	if (currR && !prevR) // 이번 프레임에 처음 눌렸을 때만
+	{
+		GameMng::Getles()->cstateCtrl.StateChange(new GameState);
+		GameMng::Getles()->player.money = 10;
+	}
+	prevR = currR;
 }
 
 void ShopState::Draw()
 {
-	shopBoard.Draw();
+	GameMng::Getles()->gameboard.Draw();
 	DrawStr(50, 22, "Next Round : press 'R'", INTENSITY_WHITE, BLACK);
 	DrawStr(80, 3, "(Unit 1) Upgrede : press 1 / 100p", INTENSITY_WHITE, BLACK);
 	DrawStr(80, 5, "(Unit 2) Upgrede : press 2 / 500p", INTENSITY_WHITE, BLACK);

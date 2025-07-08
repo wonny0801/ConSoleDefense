@@ -37,5 +37,5 @@ public:
 	void Enable(int x, int y);
 	void Disable();
 
-	void death();
+	virtual void death();
 };

@@ -10,7 +10,7 @@ EnemyCastle::EnemyCastle()
 	isAlive = true;
 	canMove = false;
 
-	hp = 500;
+	hp = 500 * GameMng::Getles()->gameboard.stage;
 	damage = 0;
 	level = 1;
 	
@@ -51,6 +51,5 @@ void EnemyCastle::Move()
 
 void EnemyCastle::Upgrade()
 {
-	level++;
-	hp = 500 * level;
+	
 }

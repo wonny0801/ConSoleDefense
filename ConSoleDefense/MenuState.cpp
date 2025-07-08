@@ -19,7 +19,7 @@ void MenuState::Update() // 메뉴화면에서 사용할 기능들 구현하기....
 	bool currEsc = (GetAsyncKeyState(VK_F5) & 0x8000) != 0;
 	if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
 	{
-		GameMng::Getles()->cstateCtrl.StateChange(E_GAME);
+		GameMng::Getles()->cstateCtrl.StateChange(new GameState);
 	}
 	prevEsc = currEsc;
 
@@ -27,7 +27,7 @@ void MenuState::Update() // 메뉴화면에서 사용할 기능들 구현하기....
 	bool currP = (GetAsyncKeyState('P') & 0x8000) != 0;
 	if (currP && !prevP) // 이번 프레임에 처음 눌렸을 때만
 	{
-		GameMng::Getles()->cstateCtrl.StateChange(E_SHOP);
+		GameMng::Getles()->cstateCtrl.StateChange(new ShopState);
 	}
 	prevP = currP;
 }

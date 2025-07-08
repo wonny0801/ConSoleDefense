@@ -55,6 +55,12 @@
     <Filter Include="MyUnit\MyCastle">
       <UniqueIdentifier>{67fde8ff-d11c-4f1a-9b57-e3605ba53bc1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyUnit\Unit_2">
+      <UniqueIdentifier>{66ffb534-d25e-4bff-96b5-f4c80e5d3e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\ResultState">
+      <UniqueIdentifier>{80313c3d-0131-4609-9e2a-77bb88892686}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -108,6 +114,12 @@
     <ClInclude Include="MyCastle.h">
       <Filter>MyUnit\MyCastle</Filter>
     </ClInclude>
+    <ClInclude Include="Unit_2.h">
+      <Filter>MyUnit\Unit_2</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultState.h">
+      <Filter>State\ResultState</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -157,6 +169,12 @@
     </ClCompile>
     <ClCompile Include="MyCastle.cpp">
       <Filter>MyUnit\MyCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_2.cpp">
+      <Filter>MyUnit\Unit_2</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultState.cpp">
+      <Filter>State\ResultState</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

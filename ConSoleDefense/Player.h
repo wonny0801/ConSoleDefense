@@ -34,4 +34,5 @@ public:
 
 	void buyUnit();
 	
+	void Restart();
 };

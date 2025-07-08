@@ -5,7 +5,7 @@ public:
 	GameBoard();
 	~GameBoard();
 
-	
+	int stage;
 
 	void Update();
 	void Draw() override;

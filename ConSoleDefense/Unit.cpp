@@ -31,19 +31,23 @@ void Unit::Init()
 
 void Unit::Update(std::vector<Unit*> target)
 {
-	if(canMove)
-		Move();
-
-	Clipping();
-	for (int i = 0; i < target.size(); i++)
+	if (isAlive)
 	{
-		if (target[i]->isAlive && abs(this->x - target[i]->x) <= this->range)
+		if(canMove)
+				Move();
+		
+		Clipping();
+		for (int i = 0; i < target.size(); i++)
 		{
-			Attack(target[i]);
-			break;
+			if (target[i]->isAlive && abs(this->x - target[i]->x) <= this->range)
+			{
+				Attack(target[i]);
+				break;
+			}
 		}
+		death();
 	}
-	death();
+	
 }
 
 void Unit::Draw()
@@ -58,6 +62,11 @@ void Unit::Draw()
 
 void Unit::Move()
 {
+	if (movetime < GetTickCount())
+	{
+		movetime = GetTickCount() + (1000 / speed);
+		x++;
+	}
 }
 
 void Unit::Upgrade()
@@ -73,7 +82,7 @@ void Unit::Attack(Unit* target)
 	{
 		if (movetime < GetTickCount())
 		{
-			movetime = GetTickCount() + (1000 / attackSpeed);
+			movetime = GetTickCount() + (3000 / attackSpeed);
 			y -=3;
 			if (target && target->isAlive)
 			{

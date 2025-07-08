@@ -1,13 +1,11 @@
 #pragma once
-class U1 : public Unit
+class U2 : public Unit
 {
 public:
 
-	U1();
-	~U1();
+	U2();
+	~U2();
 
 	//void Update() override;
 	//void Move() override;
-
-
 };

@@ -9,6 +9,9 @@ public:
 	cStateCtrl cstateCtrl;
 
 	Player player;
+	GameBoard gameboard;
+	
+
 
 	void Init();
 	void Update();

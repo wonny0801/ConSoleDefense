@@ -1,9 +1,9 @@
 #pragma once
-class ShopState : public cState
+class ResultState : public cState
 {
 public:
-	ShopState();
-	~ShopState();
+	ResultState();
+	~ResultState();
 
 
 	void Start()  override;

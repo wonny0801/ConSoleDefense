@@ -10,4 +10,6 @@ public:
 	void Update() override;
 	void Draw()   override;
 	void Exit()   override;
+
+	void UnitUpgrade();
 };

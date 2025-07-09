@@ -2,21 +2,35 @@
 
 Player::Player()
 {
-	lv_1 = 1;
-	lv_2 = 0;
-	lv_3 = 0;
-	lv_4 = 0;
-	lv_5 = 0;
-	lv_6 = 0;
-	lv_7 = 0;
-	lv_8 = 0;
-	lv_9 = 0;
-	lv_0 = 0;
+	for (int i = 0; i < D_UNIT; i++)
+	{
+		lv[i] = 0;
+	}
+	lv[1] = 1;
+
+	upg[1] = 100;
+	upg[2] = 500;
+	upg[3] = 1000;
+	upg[4] = 3000;
+	upg[5] = 5000;
+	upg[6] = 7000;
+	upg[7] = 12000;
+	upg[8] = 20000;
+	upg[9] = 40000;
+	upg[0] = 100000;
+			 
+			 
+
 	money = 10;
 	upgradePoint = 10000;
 	u1Cooltime = GetTickCount();
+
+	moneyLv = 1;
 	moneySpeed = 1;
+	moneyUpgPoint = 100;
 	moneyTime = GetTickCount();
+
+	castleHp = 100;
 
 }
 
@@ -29,34 +43,34 @@ void Player::Upgrade(int unitNumber)
 	switch (unitNumber)
 	{
 	case 0:
-		lv_0++;
+		lv[0]++;
 		break;
 	case 1:
-		lv_1++;
+		lv[1]++;
 		break;
 	case 2:
-		lv_2++;
+		lv[2]++;
 		break;
 	case 3:
-		lv_3++;
+		lv[3]++;
 		break;
 	case 4:
-		lv_4++;
+		lv[4]++;
 		break;
 	case 5:
-		lv_5++;
+		lv[5]++;
 		break;
 	case 6:
-		lv_6++;
+		lv[6]++;
 		break;
 	case 7:
-		lv_7++;
+		lv[7]++;
 		break;
 	case 8:
-		lv_8++;
+		lv[8]++;
 		break;
 	case 9:
-		lv_9++;
+		lv[9]++;
 		break;
 	}
 }
@@ -107,19 +121,34 @@ void Player::buyUnit()
 
 void Player::Restart()
 {
-	lv_1 = 1;
-	lv_2 = 0;
-	lv_3 = 0;
-	lv_4 = 0;
-	lv_5 = 0;
-	lv_6 = 0;
-	lv_7 = 0;
-	lv_8 = 0;
-	lv_9 = 0;
-	lv_0 = 0;
-	money =0;
-	upgradePoint = 0;
+	PlayerInit();
+}
+
+void Player::PlayerInit()
+{
+	for (int i = 0; i < D_UNIT; i++)
+	{
+		lv[i] = 0;
+	}
+	lv[1] = 1;
+
+	upg[1] = 100;
+	upg[2] = 500;
+	upg[3] = 1000;
+	upg[4] = 3000;
+	upg[5] = 5000;
+	upg[6] = 7000;
+	upg[7] = 12000;
+	upg[8] = 20000;
+	upg[9] = 40000;
+	upg[0] = 100000;
+
+	money = 10;
+	upgradePoint = 100;
 	u1Cooltime = GetTickCount();
 	moneySpeed = 1;
+	moneyUpgPoint = 100;
 	moneyTime = GetTickCount();
+
+	castleHp = 100;
 }

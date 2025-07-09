@@ -10,7 +10,7 @@ MyCastle::MyCastle()
 	isAlive = true;
 	canMove = false;
 
-	hp = 100;
+	hp = GameMng::Getles()->player.castleHp;
 	damage = 0;
 	level = 1;
 }

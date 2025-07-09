@@ -11,6 +11,7 @@ public:
 	Player player;
 	GameBoard gameboard;
 	
+	
 
 
 	void Init();

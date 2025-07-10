@@ -2,18 +2,32 @@
 
 U0::U0()
 {
-	y = 22;
-	fColor = WHITE;
+	fColor = INTENSITY_CYAN;
 	body = '0';
 
-	hp = 10.0f;
-	damage = 3.0f;
-	speed = 1.0f;
-	isAlive = true;
+	hp = 50000.0f * pow(1.05f, GameMng::Getles()->player.lv[0]);
+	damage = 3000.0f * pow(1.05f, GameMng::Getles()->player.lv[0]);
+	speed = 10.0f;
+	range = 15;
+	attackSpeed = 3;
+	isAlive = false;
 }
 
 U0::~U0()
 {
+}
+
+void U0::Update(std::vector<Unit*> target)
+{
+	if (isAlive)
+	{
+		if (canMove)
+			Move();
+
+		Clipping();
+		AreaAttack(target);
+		death();
+	}
 }
 
 //void U0::Update()
@@ -21,12 +35,4 @@ U0::~U0()
 //	Move();
 //}
 
-void U0::Move()
-{
-	
-	if (movetime < GetTickCount())
-	{
-		movetime = GetTickCount() + (1000 / speed);
-		x++;
-	}
-}
+

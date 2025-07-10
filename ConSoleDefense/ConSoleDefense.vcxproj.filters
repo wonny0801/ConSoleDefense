@@ -61,6 +61,27 @@
     <Filter Include="State\ResultState">
       <UniqueIdentifier>{80313c3d-0131-4609-9e2a-77bb88892686}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyUnit\Unit_3">
+      <UniqueIdentifier>{5d684b0f-c2c0-4ae4-8f90-6ecf64e01b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_4">
+      <UniqueIdentifier>{c88df8b3-b8a1-4907-9a80-bc2426d7acd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_5">
+      <UniqueIdentifier>{5892937a-5fed-40e2-bb7b-d7dcc7daf38f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_6">
+      <UniqueIdentifier>{b4a847bf-6535-4348-a646-d27b76d6f776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_7">
+      <UniqueIdentifier>{d8b07f1b-b562-476a-9d60-ff39777968ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_8">
+      <UniqueIdentifier>{d386671d-b00a-4160-8ea9-76cfa697ffc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUnit\Unit_9">
+      <UniqueIdentifier>{dd39c1fe-347d-4fa2-9350-f3cead0cd366}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -120,6 +141,30 @@
     <ClInclude Include="ResultState.h">
       <Filter>State\ResultState</Filter>
     </ClInclude>
+    <ClInclude Include="Unit_3.h">
+      <Filter>MyUnit\Unit_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_4.h">
+      <Filter>MyUnit\Unit_4</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_5.h">
+      <Filter>MyUnit\Unit_5</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_6.h">
+      <Filter>MyUnit\Unit_6</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_7.h">
+      <Filter>MyUnit\Unit_7</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_8.h">
+      <Filter>MyUnit\Unit_8</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_9.h">
+      <Filter>MyUnit\Unit_9</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBoss.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -175,6 +220,30 @@
     </ClCompile>
     <ClCompile Include="ResultState.cpp">
       <Filter>State\ResultState</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_3.cpp">
+      <Filter>MyUnit\Unit_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_4.cpp">
+      <Filter>MyUnit\Unit_4</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_5.cpp">
+      <Filter>MyUnit\Unit_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_6.cpp">
+      <Filter>MyUnit\Unit_6</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_7.cpp">
+      <Filter>MyUnit\Unit_7</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_8.cpp">
+      <Filter>MyUnit\Unit_8</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit_9.cpp">
+      <Filter>MyUnit\Unit_9</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBoss.cpp">
+      <Filter>Enemy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -93,7 +93,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[2]; // 포인트 지불
-		GameMng::Getles()->player.upg[2] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[2] +=500; // 가격증가
 		GameMng::Getles()->player.lv[2]++; // 레벨증가
 	}
 	prev2 = curr2;
@@ -106,7 +106,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[3]; // 포인트 지불
-		GameMng::Getles()->player.upg[3] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[3] +=1000; // 가격증가
 		GameMng::Getles()->player.lv[3]++; // 레벨증가
 	}
 	prev3 = curr3;
@@ -119,7 +119,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[4]; // 포인트 지불
-		GameMng::Getles()->player.upg[4] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[4] +=3000; // 가격증가
 		GameMng::Getles()->player.lv[4]++; // 레벨증가
 	}
 	prev4 = curr4;
@@ -132,7 +132,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[5]; // 포인트 지불
-		GameMng::Getles()->player.upg[5] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[5] +=5000; // 가격증가
 		GameMng::Getles()->player.lv[5]++; // 레벨증가
 	}
 	prev5 = curr5;
@@ -145,7 +145,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[6]; // 포인트 지불
-		GameMng::Getles()->player.upg[6] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[6] +=7000; // 가격증가
 		GameMng::Getles()->player.lv[6]++; // 레벨증가
 	}
 	prev6 = curr6;
@@ -158,7 +158,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[7]; // 포인트 지불
-		GameMng::Getles()->player.upg[7] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[7] +=12000; // 가격증가
 		GameMng::Getles()->player.lv[7]++; // 레벨증가
 	}
 	prev7 = curr7;
@@ -171,7 +171,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[8]; // 포인트 지불
-		GameMng::Getles()->player.upg[8] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[8] +=20000; // 가격증가
 		GameMng::Getles()->player.lv[8]++; // 레벨증가
 	}
 	prev8 = curr8;
@@ -184,7 +184,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[9]; // 포인트 지불
-		GameMng::Getles()->player.upg[9] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[9] +=40000; // 가격증가
 		GameMng::Getles()->player.lv[9]++; // 레벨증가
 	}
 	prev9 = curr9;
@@ -197,7 +197,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[0]; // 포인트 지불
-		GameMng::Getles()->player.upg[0] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[0] +=100000; // 가격증가
 		GameMng::Getles()->player.lv[0]++; // 레벨증가
 	}
 	prev0 = curr0;

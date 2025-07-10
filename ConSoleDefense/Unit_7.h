@@ -1,13 +1,13 @@
 #pragma once
-class U0 : public Unit
+class U7 : public Unit
 {
 public:
-	
-	U0();
-	~U0();
+
+	U7();
+	~U7();
 
 	void Update(std::vector<Unit*> target) override;
 	//void Move() override;
-	
-	
+
+
 };

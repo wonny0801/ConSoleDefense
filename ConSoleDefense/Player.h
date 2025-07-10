@@ -17,6 +17,15 @@ public:
 	int castleHp;
 	DWORD moneyTime;
 	DWORD u1Cooltime;
+	DWORD u2Cooltime;
+	DWORD u3Cooltime;
+	DWORD u4Cooltime;
+	DWORD u5Cooltime;
+	DWORD u6Cooltime;
+	DWORD u7Cooltime;
+	DWORD u8Cooltime;
+	DWORD u9Cooltime;
+	DWORD u0Cooltime;
 
 	Player();
 	~Player();

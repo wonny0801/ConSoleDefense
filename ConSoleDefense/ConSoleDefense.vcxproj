@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="define.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyBoss.h" />
     <ClInclude Include="EnemyCastle.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameMng.h" />
@@ -146,10 +147,18 @@
     <ClInclude Include="Unit_0.h" />
     <ClInclude Include="Unit_1.h" />
     <ClInclude Include="Unit_2.h" />
+    <ClInclude Include="Unit_3.h" />
+    <ClInclude Include="Unit_4.h" />
+    <ClInclude Include="Unit_5.h" />
+    <ClInclude Include="Unit_6.h" />
+    <ClInclude Include="Unit_7.h" />
+    <ClInclude Include="Unit_8.h" />
+    <ClInclude Include="Unit_9.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
     <ClCompile Include="EnemyCastle.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameMng.cpp" />
@@ -166,6 +175,13 @@
     <ClCompile Include="Unit_0.cpp" />
     <ClCompile Include="Unit_1.cpp" />
     <ClCompile Include="Unit_2.cpp" />
+    <ClCompile Include="Unit_3.cpp" />
+    <ClCompile Include="Unit_4.cpp" />
+    <ClCompile Include="Unit_5.cpp" />
+    <ClCompile Include="Unit_6.cpp" />
+    <ClCompile Include="Unit_7.cpp" />
+    <ClCompile Include="Unit_8.cpp" />
+    <ClCompile Include="Unit_9.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

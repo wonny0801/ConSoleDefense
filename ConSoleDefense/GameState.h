@@ -12,6 +12,8 @@ public:
 	std::vector<Unit*> playerUnit;
 	std::vector<Unit*> enemys;
 
+	EnemyBoss* enemyboss;
+
 	MyCastle* mycastle;
 	EnemyCastle* castle;
 

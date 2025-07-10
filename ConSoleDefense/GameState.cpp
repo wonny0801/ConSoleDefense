@@ -7,6 +7,13 @@ GameState::GameState()
     enemys.push_back(castle);
     mycastle = new MyCastle();
     playerUnit.push_back(mycastle);
+    enemyboss = nullptr;
+    if (GameMng::Getles()->gameboard.stage % 5 == 0)
+    {
+        enemyboss = new EnemyBoss();
+        enemys.push_back(enemyboss);
+        enemyboss->isAlive = true;
+    }
 }
 
 GameState::~GameState()
@@ -37,7 +44,7 @@ void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게�
     {
         GameMng::Getles()->cstateCtrl.StateChange(new ResultState);
     }
-
+    enemyboss->Update(playerUnit);
     CreateEnemy();
 	//U0_1.Update();
 	GameMng::Getles()->player.Update();
@@ -69,6 +76,7 @@ void GameState::Draw()
 	{
 		enemys[i]->Draw();
 	}
+    enemyboss->Draw();
 }
 
 void GameState::Exit()

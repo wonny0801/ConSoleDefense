@@ -21,8 +21,8 @@ Player::Player()
 			 
 			 
 
-	money = 10;
-	upgradePoint = 10000;
+	money = 100;
+	upgradePoint = 0;
 	u1Cooltime = GetTickCount();
 
 	moneyLv = 1;

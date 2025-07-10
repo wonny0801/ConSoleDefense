@@ -31,7 +31,7 @@ void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게�
     {
         GameMng::Getles()->cstateCtrl.StateChange(new ShopState);
         GameMng::Getles()->gameboard.stage++;
-        GameMng::Getles()->player.upgradePoint += 1000 * D_STAGE * D_STAGE;
+        GameMng::Getles()->player.upgradePoint += 1000 * D_STAGE;
     }
     if (mycastle->hp <= 0)
     {

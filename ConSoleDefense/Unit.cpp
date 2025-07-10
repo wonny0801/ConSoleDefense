@@ -80,13 +80,33 @@ void Unit::Attack(Unit* target)
 {
 	if (!canMove)
 	{
-		if (movetime < GetTickCount())
+		if (attackTime < GetTickCount())
 		{
-			movetime = GetTickCount() + (3000 / attackSpeed);
+			attackTime = GetTickCount() + (3000 / attackSpeed);
 			y -=3;
 			if (target && target->isAlive)
 			{
 				target->hp -= this->damage;
+			}
+		}
+	}
+}
+
+void Unit::AreaAttack(std::vector<Unit*> target)
+{
+	if (!canMove)
+	{
+		if (attackTime < GetTickCount())
+		{
+			attackTime = GetTickCount() + (3000 / attackSpeed);
+			y -= 3;
+			for (int i = 0; i < target.size(); i++)
+			{
+				if (target[i] && target[i]->isAlive &&
+					abs(this->x - target[i]->x) <= this->range)
+				{
+					target[i]->hp -= this->damage;
+				}
 			}
 		}
 	}

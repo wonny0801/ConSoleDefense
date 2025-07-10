@@ -5,6 +5,7 @@
 #include "define.h"
 #include <string>
 #include <vector>
+#include <cmath>
 //-------------------------------------
 //기본적인 틀을 만드는 파일들... 맨 위에...
 #include "Singleton.h"

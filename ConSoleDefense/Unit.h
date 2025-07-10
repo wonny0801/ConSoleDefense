@@ -25,13 +25,14 @@ public:
 	DWORD deathTime;
 
 	virtual void Init();
-	void Update(std::vector<Unit*> target);
+	virtual void Update(std::vector<Unit*> target);
 	virtual void Draw();
 	virtual void Move();
 
 	virtual void Upgrade();
 
 	void Attack(Unit* target);
+	void AreaAttack(std::vector<Unit*> target);
 	
 	void Clipping();
 	void Enable(int x, int y);

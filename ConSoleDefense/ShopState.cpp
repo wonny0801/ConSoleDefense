@@ -80,7 +80,7 @@ void ShopState::UnitUpgrade()
 	{
 		GameMng::Getles()->player.upgradePoint -=
 			GameMng::Getles()->player.upg[1]; // 포인트 지불
-		GameMng::Getles()->player.upg[1] *= 2; // 가격증가
+		GameMng::Getles()->player.upg[1] += 100; // 가격증가
 		GameMng::Getles()->player.lv[1]++; // 레벨증가
 	}
 	prev1 = curr1;

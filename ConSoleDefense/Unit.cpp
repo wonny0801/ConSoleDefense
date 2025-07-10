@@ -114,7 +114,7 @@ void Unit::AreaAttack(std::vector<Unit*> target)
 
 void Unit::Clipping()
 {
-	y++;
+	y=22;
 	if (x > 119)
 		x = 119;
 	if (x < 0)

@@ -44,7 +44,7 @@ void Enemy::death()
 	{
 		Disable();
 		deathTime = GetTickCount();
-		GameMng::Getles()->player.money += 5 * D_STAGE;
+		GameMng::Getles()->player.money += 5 * D_STAGE * D_STAGE;
 		GameMng::Getles()->player.upgradePoint += 100 * D_STAGE * D_STAGE;
 	}
 }

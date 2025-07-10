@@ -106,7 +106,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('1'))
 	{
 		if (money >= 10 && u1Cooltime < GetTickCount()
-			&& lv[1] == 0)
+			&& lv[1] != 0)
 		{
 			u1Cooltime = GetTickCount() + 500;
 			money -= 10;
@@ -119,7 +119,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('2'))
 	{
 		if (money >= 30 && u2Cooltime < GetTickCount()
-			&& lv[2] == 0)
+			&& lv[2] != 0)
 		{
 			u2Cooltime = GetTickCount() + 500;
 			money -= 30;
@@ -132,7 +132,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('3'))
 	{
 		if (money >= 150 && u3Cooltime < GetTickCount()
-			&& lv[3] == 0)
+			&& lv[3] != 0)
 		{
 			u3Cooltime = GetTickCount() + 1500;
 			money -= 150;
@@ -145,7 +145,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('4'))
 	{
 		if (money >= 300 && u4Cooltime < GetTickCount()
-			&& lv[3] == 0)
+			&& lv[3] != 0)
 		{
 			u4Cooltime = GetTickCount() + 2500;
 			money -= 300;
@@ -158,7 +158,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('5'))
 	{
 		if (money >= 500 && u5Cooltime < GetTickCount()
-			&& lv[5] == 0)
+			&& lv[5] != 0)
 		{
 			u5Cooltime = GetTickCount() + 3000;
 			money -= 500;
@@ -171,7 +171,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('6'))
 	{
 		if (money >= 800 && u6Cooltime < GetTickCount()
-			&& lv[6] == 0)
+			&& lv[6] != 0)
 		{
 			u6Cooltime = GetTickCount() + 5000;
 			money -= 800;
@@ -184,7 +184,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('7'))
 	{
 		if (money >= 1200 && u7Cooltime < GetTickCount()
-			&& lv[7] == 0)
+			&& lv[7] != 0)
 		{
 			u7Cooltime = GetTickCount() + 5500;
 			money -= 1200;
@@ -197,7 +197,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('8'))
 	{
 		if (money >= 1800 && u8Cooltime < GetTickCount()
-			&& lv[8] == 0)
+			&& lv[8] != 0)
 		{
 			u8Cooltime = GetTickCount() + 6000;
 			money -= 1800;
@@ -210,7 +210,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('9'))
 	{
 		if (money >= 2200 && u9Cooltime < GetTickCount()
-			&& lv[9] == 0)
+			&& lv[9] != 0)
 		{
 			u9Cooltime = GetTickCount() + 8000;
 			money -= 2200;
@@ -223,7 +223,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('0'))
 	{
 		if (money >= 3000 && u0Cooltime < GetTickCount()
-			&& lv[0] == 0)
+			&& lv[0] != 0)
 		{
 			u0Cooltime = GetTickCount() + 10000;
 			money -= 3000;

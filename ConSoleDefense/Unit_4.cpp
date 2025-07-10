@@ -5,8 +5,8 @@ U4::U4()
 	fColor = INTENSITY_MAGENTA;
 	body = '4';
 
-	hp = 100.0f * pow(1.05f, GameMng::Getles()->player.lv[4]);
-	damage = 30.0f * pow(1.05f, GameMng::Getles()->player.lv[4]);
+	hp = 100.0f * pow(1.13f, GameMng::Getles()->player.lv[4]);
+	damage = 30.0f * pow(1.13f, GameMng::Getles()->player.lv[4]);
 	speed = 50.0f;
 	range = 3;
 	attackSpeed = 5;

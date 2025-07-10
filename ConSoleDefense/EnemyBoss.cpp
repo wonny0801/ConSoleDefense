@@ -7,8 +7,8 @@ EnemyBoss::EnemyBoss()
 	fColor = RED;
 
 
-	hp = 300.0f * pow(2, D_STAGE); // 배율 증가 
-	damage = 200.0f * pow(2, D_STAGE);
+	hp = 30.0f * pow(2, D_STAGE); // 배율 증가 
+	damage = 20.0f * pow(2, D_STAGE);
 	speed = 1.0f ;//적 유닛 점점 빨라짐
 	range = 10 + (D_STAGE / 5);// 10스테당 사거리 증가
 	attackSpeed = 1 ;//3스테당 공속증가

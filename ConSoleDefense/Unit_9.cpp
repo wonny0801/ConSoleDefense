@@ -5,8 +5,8 @@ U9::U9()
 	fColor = INTENSITY_YELLOW;
 	body = '9';
 
-	hp = 5000.0f * pow(1.5f, GameMng::Getles()->player.lv[9]);
-	damage = 800.0f * pow(1.5f, GameMng::Getles()->player.lv[9]);
+	hp = 5000.0f * (0.8f + (GameMng::Getles()->player.lv[9] * 0.2f));
+	damage = 800.0f * (0.8f + (GameMng::Getles()->player.lv[9] * 0.2f));
 	speed = 25.0f;
 	range = 6;
 	attackSpeed = 7;

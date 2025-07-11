@@ -5,8 +5,8 @@ U0::U0()
 	fColor = INTENSITY_CYAN;
 	body = '0';
 
-	hp = 50000.0f * pow(1.7f, GameMng::Getles()->player.lv[0]);
-	damage = 3000.0f * pow(1.7f, GameMng::Getles()->player.lv[0]);
+	hp = 50000.0f * (0.8f + (GameMng::Getles()->player.lv[0] * 0.2f));
+	damage = 3000.0f * (0.8f + (GameMng::Getles()->player.lv[0] * 0.2f));
 	speed = 10.0f;
 	range = 15;
 	attackSpeed = 3;

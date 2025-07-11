@@ -7,11 +7,11 @@ EnemyBoss::EnemyBoss()
 	fColor = RED;
 
 
-	hp = 30.0f * pow(2, D_STAGE); // 배율 증가 
-	damage = 20.0f * pow(2, D_STAGE);
-	speed = 1.0f ;//적 유닛 점점 빨라짐
-	range = 10 + (D_STAGE / 5);// 10스테당 사거리 증가
-	attackSpeed = 1 ;//3스테당 공속증가
+	hp = 100.0f * D_STAGE * (D_STAGE / 5 + 1); // 배율 증가 
+	damage = 30.0f * D_STAGE * (D_STAGE / 5 + 1);
+	speed = 0.3f ;
+	range = 10;// 10스테당 사거리 증가
+	attackSpeed = 1 ;
 	isAlive = false;
 	level = 1;
 }
@@ -48,7 +48,7 @@ void EnemyBoss::death()
 	{
 		Disable();
 		deathTime = GetTickCount();
-		GameMng::Getles()->player.money += 50000 * D_STAGE;
-		GameMng::Getles()->player.upgradePoint += 10000 * D_STAGE * D_STAGE;
+		GameMng::Getles()->player.money += 5000 * D_STAGE;
+		GameMng::Getles()->player.upgradePoint += 50000 * D_STAGE;
 	}
 }

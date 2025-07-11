@@ -5,8 +5,8 @@ U3::U3()
 	fColor = GREEN;
 	body = '3';
 
-	hp = 50.0f * pow(1.1f, GameMng::Getles()->player.lv[3]);
-	damage = 20.0f * pow(1.1f, GameMng::Getles()->player.lv[3]);
+	hp = 50.0f * (0.8f + (GameMng::Getles()->player.lv[3] * 0.2f));
+	damage = 20.0f * (0.8f + (GameMng::Getles()->player.lv[3] * 0.2f));
 	speed = 50.0f;
 	range = 2;
 	attackSpeed = 15;

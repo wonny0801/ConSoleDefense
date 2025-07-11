@@ -27,6 +27,8 @@ public:
 	DWORD u9Cooltime;
 	DWORD u0Cooltime;
 
+	int AdviceNumber;
+
 	Player();
 	~Player();
 

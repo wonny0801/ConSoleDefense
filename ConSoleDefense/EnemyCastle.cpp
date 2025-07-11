@@ -10,7 +10,7 @@ EnemyCastle::EnemyCastle()
 	isAlive = true;
 	canMove = false;
 
-	hp = 500 * D_STAGE * D_STAGE;
+	hp = 1000 * D_STAGE * (D_STAGE / 5 + 1);
 	damage = 0;
 	level = 1;
 	

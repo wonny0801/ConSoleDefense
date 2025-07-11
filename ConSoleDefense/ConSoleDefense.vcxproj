@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AdviceState.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyBoss.h" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Unit_9.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdviceState.cpp" />
     <ClCompile Include="ConsoleFramework.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyBoss.cpp" />

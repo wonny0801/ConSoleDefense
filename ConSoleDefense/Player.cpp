@@ -8,16 +8,16 @@ Player::Player()
 	}
 	lv[1] = 1;
 
-	upg[1] = 100;
-	upg[2] = 500;
-	upg[3] = 1000;
-	upg[4] = 3000;
-	upg[5] = 5000;
-	upg[6] = 7000;
-	upg[7] = 12000;
-	upg[8] = 20000;
-	upg[9] = 40000;
-	upg[0] = 100000;
+	upg[1] = 200;
+	upg[2] = 300;
+	upg[3] = 600;
+	upg[4] = 1000;
+	upg[5] = 2000;
+	upg[6] = 3000;
+	upg[7] = 5000;
+	upg[8] = 7000;
+	upg[9] = 10000;
+	upg[0] = 22000;
 			 
 			 
 
@@ -42,6 +42,7 @@ Player::Player()
 
 	castleHp = 100;
 
+	AdviceNumber = 0;
 }
 
 Player::~Player()
@@ -248,16 +249,16 @@ void Player::PlayerInit()
 	}
 	lv[1] = 1;
 
-	upg[1] = 100;
-	upg[2] = 500;
-	upg[3] = 1000;
-	upg[4] = 3000;
-	upg[5] = 5000;
-	upg[6] = 7000;
-	upg[7] = 12000;
-	upg[8] = 20000;
-	upg[9] = 40000;
-	upg[0] = 100000;
+	upg[1] = 200;
+	upg[2] = 300;
+	upg[3] = 600;
+	upg[4] = 1000;
+	upg[5] = 2000;
+	upg[6] = 3000;
+	upg[7] = 5000;
+	upg[8] = 7000;
+	upg[9] = 10000;
+	upg[0] = 22000;
 
 	money = 10;
 	upgradePoint = 100;

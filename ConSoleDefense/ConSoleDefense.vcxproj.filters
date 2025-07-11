@@ -82,6 +82,9 @@
     <Filter Include="MyUnit\Unit_9">
       <UniqueIdentifier>{dd39c1fe-347d-4fa2-9350-f3cead0cd366}</UniqueIdentifier>
     </Filter>
+    <Filter Include="State\AdviceState">
+      <UniqueIdentifier>{abdf7d60-5abb-4279-a840-3c1d924fb27c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -165,6 +168,9 @@
     <ClInclude Include="EnemyBoss.h">
       <Filter>Enemy</Filter>
     </ClInclude>
+    <ClInclude Include="AdviceState.h">
+      <Filter>State\AdviceState</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleFramework.cpp">
@@ -244,6 +250,9 @@
     </ClCompile>
     <ClCompile Include="EnemyBoss.cpp">
       <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="AdviceState.cpp">
+      <Filter>State\AdviceState</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

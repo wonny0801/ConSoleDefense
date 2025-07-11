@@ -2,47 +2,7 @@
 
 Player::Player()
 {
-	for (int i = 0; i < D_UNIT; i++)
-	{
-		lv[i] = 0;
-	}
-	lv[1] = 1;
-
-	upg[1] = 200;
-	upg[2] = 300;
-	upg[3] = 600;
-	upg[4] = 1000;
-	upg[5] = 2000;
-	upg[6] = 3000;
-	upg[7] = 5000;
-	upg[8] = 7000;
-	upg[9] = 10000;
-	upg[0] = 22000;
-			 
-			 
-
-	money = 100;
-	upgradePoint = 0;
-	u1Cooltime = GetTickCount();
-	u1Cooltime = GetTickCount();
-	u2Cooltime = GetTickCount();
-	u3Cooltime = GetTickCount();
-	u4Cooltime = GetTickCount();
-	u5Cooltime = GetTickCount();
-	u6Cooltime = GetTickCount();
-	u7Cooltime = GetTickCount();
-	u8Cooltime = GetTickCount();
-	u9Cooltime = GetTickCount();
-	u0Cooltime = GetTickCount();
-
-	moneyLv = 1;
-	moneySpeed = 1;
-	moneyUpgPoint = 100;
-	moneyTime = GetTickCount();
-
-	castleHp = 100;
-
-	AdviceNumber = 0;
+	PlayerInit();
 }
 
 Player::~Player()
@@ -260,12 +220,28 @@ void Player::PlayerInit()
 	upg[9] = 10000;
 	upg[0] = 22000;
 
-	money = 10;
-	upgradePoint = 100;
+
+
+	money = 100;
+	upgradePoint = 0;
 	u1Cooltime = GetTickCount();
+	u1Cooltime = GetTickCount();
+	u2Cooltime = GetTickCount();
+	u3Cooltime = GetTickCount();
+	u4Cooltime = GetTickCount();
+	u5Cooltime = GetTickCount();
+	u6Cooltime = GetTickCount();
+	u7Cooltime = GetTickCount();
+	u8Cooltime = GetTickCount();
+	u9Cooltime = GetTickCount();
+	u0Cooltime = GetTickCount();
+
+	moneyLv = 1;
 	moneySpeed = 1;
 	moneyUpgPoint = 100;
 	moneyTime = GetTickCount();
 
 	castleHp = 100;
+
+	AdviceNumber = 0;
 }

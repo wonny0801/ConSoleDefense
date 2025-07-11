@@ -10,7 +10,7 @@ GameMng::~GameMng()
 
 void GameMng::Init()
 {
-	cstateCtrl.StateChange(new MenuState);
+	cstateCtrl.StateChange(new AdviceState);
 }
 
 void GameMng::Update()

@@ -14,14 +14,14 @@ void ShopState::Start()
 
 void ShopState::Update()
 {
-	static bool prevEsc = false;
-	bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
+	//static bool prevEsc = false;
+	//bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
 
-	if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
-	{
-		GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
-	}
-	prevEsc = currEsc;
+	//if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
+	//{
+	//	GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
+	//}
+	//prevEsc = currEsc;
 
 	static bool prevR = false;
 	bool currR = (GetAsyncKeyState('R') & 0x8000) != 0;
@@ -29,7 +29,7 @@ void ShopState::Update()
 	if (currR && !prevR) // 이번 프레임에 처음 눌렸을 때만
 	{
 		GameMng::Getles()->cstateCtrl.StateChange(new GameState);
-		GameMng::Getles()->player.money = 10;
+		GameMng::Getles()->player.money = 100;
 	}
 	prevR = currR;
 
@@ -39,7 +39,7 @@ void ShopState::Update()
 void ShopState::Draw()
 {
 	GameMng::Getles()->gameboard.Draw();
-	DrawStr(50, 22, "Next Round : press 'R'", INTENSITY_WHITE, BLACK);
+	DrawStr(50, 22, "Round Start : press 'R'", INTENSITY_BLUE, BLACK);
 	
 	DrawStr(3, 2, ("Upgrade Point : " +
 		std::to_string(GameMng::Getles()->player.upgradePoint)).c_str(),

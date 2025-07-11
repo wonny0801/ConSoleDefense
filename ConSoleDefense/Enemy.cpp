@@ -7,7 +7,7 @@ Enemy::Enemy()
 	fColor = INTENSITY_RED;
 	
 
-	hp = 10.0f * D_STAGE * (D_STAGE / 5 + 1); // 배율 증가 
+	hp = 20.0f * D_STAGE * (D_STAGE / 5 + 1); // 배율 증가 
 	damage = 2.0f * D_STAGE * (D_STAGE / 5 + 1);
 	speed = 5.0f;//적 유닛 점점 빨라짐
 	range = 1 + (D_STAGE / 5);// 10스테당 사거리 증가

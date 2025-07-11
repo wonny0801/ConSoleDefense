@@ -26,13 +26,13 @@ void GameState::Start()
 
 void GameState::Update()// 게임스테이트에서 사용할 기능들 구현하기 (대부분의 게임기능들)
 {
-    static bool prevEsc = false;
-    bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
-    if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
-    {
-        GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
-    }
-    prevEsc = currEsc;
+    //static bool prevEsc = false;
+    //bool currEsc = (GetAsyncKeyState(VK_ESCAPE) & 0x8000) != 0;
+    //if (currEsc && !prevEsc) // 이번 프레임에 처음 눌렸을 때만
+    //{
+    //    GameMng::Getles()->cstateCtrl.StateChange(new MenuState);
+    //}
+    //prevEsc = currEsc;
 
     if (castle->hp <= 0)
     {

@@ -2,6 +2,8 @@
 
 int main()
 {
+	SetConsoleOutputCP(CP_UTF8);
+
 	Init();
 
 	while (true)

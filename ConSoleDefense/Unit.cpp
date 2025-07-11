@@ -56,7 +56,7 @@ void Unit::Draw()
 		DrawChar(x, y, body, fColor, bColor);
 	else if (deathTime != 0 && GetTickCount() - deathTime < 2000)
 	{
-		DrawUniCode(this->x, 17, L"\u2620  ", BLUE, RED);
+		DrawUniCode(this->x, 17, L"\u2620", BLACK, RED);
 	}
 }
 

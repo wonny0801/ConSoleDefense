@@ -5,7 +5,7 @@ U2::U2()
 	fColor = INTENSITY_BLUE;
 	body = '2';
 
-	hp = 100.0f * (0.8f + (GameMng::Getles()->player.lv[2] * 0.2f));
+	hp = 200.0f * (0.8f + (GameMng::Getles()->player.lv[2] * 0.2f));
 	damage = 0.3f * (0.8f + (GameMng::Getles()->player.lv[2] * 0.2f));
 	speed = 20.0f;
 	range = 1;

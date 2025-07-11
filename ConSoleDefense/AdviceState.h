@@ -9,4 +9,6 @@ public:
 	void Update();
 	void Draw();
 	void Exit();
+
+	void Clipping();
 };

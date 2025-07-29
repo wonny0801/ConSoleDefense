@@ -18,6 +18,14 @@ GameState::GameState()
 
 GameState::~GameState()
 {
+    delete castle;
+    delete mycastle;
+    if (enemyboss)
+    {
+        delete enemyboss;
+    }
+    playerUnit.clear();
+    enemys.clear();
 }
 
 void GameState::Start()
@@ -87,6 +95,7 @@ void GameState::Draw()
 void GameState::Exit()
 {
 }
+
 
 void GameState::CreateEnemy()
 {

@@ -77,7 +77,7 @@ void cStateCtrl::Update()
 		}
 		m_pCurState = temp;
 		m_pCurState->Start();
-		temp = nullptr;
+		temp = nullptr; 
 	}
 }
 

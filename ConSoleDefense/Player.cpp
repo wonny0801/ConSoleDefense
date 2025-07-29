@@ -57,8 +57,16 @@ void Player::moneyUp()
 	if (moneySpeed <= 0) return;
 	if (moneyTime < GetTickCount())
 	{
-		moneyTime = GetTickCount() + (1000 / moneySpeed);
-		money++;
+		if (moneySpeed < 32)
+		{
+			moneyTime = GetTickCount() + (1000 / moneySpeed);
+			money++;
+		}
+		else
+		{
+			moneyTime = GetTickCount() + 125;
+			money += moneySpeed / 16;
+		}
 	}
 }
 
@@ -106,7 +114,7 @@ void Player::buyUnit()
 	if (GetAsyncKeyState('4'))
 	{
 		if (money >= 300 && u4Cooltime < GetTickCount()
-			&& lv[3] != 0)
+			&& lv[4] != 0)
 		{
 			u4Cooltime = GetTickCount() + 2500;
 			money -= 300;
